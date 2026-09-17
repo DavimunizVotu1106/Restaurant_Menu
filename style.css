@@ -161,7 +161,7 @@ nav a:hover {
 .menu-card-content p {
     color: #6b5b5b;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .menu-card-content span {
@@ -172,6 +172,13 @@ nav a:hover {
 
 .menu-card:hover {
     transform: translateY(-8px);
+}
+
+.menu-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
 .menu-grid {
@@ -191,6 +198,18 @@ nav a:hover {
     align-items: center;
     background-color: #ffd9e3;
     border-radius: 50%;
+}
+
+.menu-character {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.menu-character img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
 }
 
 @keyframes float {
