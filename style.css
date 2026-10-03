@@ -119,6 +119,7 @@ nav a:hover {
 .menu-title {
     text-align: center;
     margin-bottom: 40px;
+    
 }
 
 .menu-title h2 {
@@ -132,12 +133,25 @@ nav a:hover {
     font-weight: bold;
 }
 
+.menu-character {
+    display: center;
+    text-align: center;
+}
+
+.menu-character img {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    
+}
+
 .menu-card {
-    width: 300px;
-    background-color: white;
+   width: 100%;
+    display: block;
+    background-color: rgb(255, 244, 249);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.0.8);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
 }
 
@@ -201,17 +215,82 @@ nav a:hover {
     border-radius: 50%;
 }
 
-.menu-character {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+.menu-card-character {
+    flex-shrink: 0;
 }
 
-.menu-character img {
-    width: 95px;
-    height: 95px;
+.menu-card-character img {
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
+/* Usagi */
+.menu-card-character {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.menu-card-character img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+/* hachiware */
+.menu-card-character1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu-card-character1 img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Chiiwaka */
+.menu-card-character2 {
+    display: flex; 
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.menu-card-character2 img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-filters button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+
+    background-color: #ffe0e9;
+    color: #4b3b3b;
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-filters button:hover {
+    background-color: #e88ca5;
+    color: white;
+}
+
+
 
 @keyframes float {
     0% {
