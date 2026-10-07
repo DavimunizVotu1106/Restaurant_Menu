@@ -8,20 +8,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 50px;
-    background-color: #fff8f0
+    background-color: #fff8f0;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    
 }
 
 .logo img {
@@ -50,13 +51,14 @@ nav a:hover {
     color: #e88ca5;
 }
 
+
+/* HERO */
+
 .hero {
     min-height: 500px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 60px 50px;
     background-color: #fff1e6;
     gap: 80px;
@@ -80,20 +82,18 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.hero-text h2+p {
+.hero-text h2 + p {
     color: #6b5b5b;
     font-size: 18px;
-    line-height: 1.6px;
+    line-height: 1.6;
     margin-bottom: 30px;
 }
 
 .hero-text a {
     display: inline-block;
     padding: 14px 28px;
-
     background-color: #e88ca5;
     color: white;
-
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
@@ -103,13 +103,25 @@ nav a:hover {
 .hero-text a:hover {
     transform: translateY(-3px);
     background-color: #b34764;
-
 }
 
 .hero-image img {
     width: 220px;
     animation: float 2s ease-in-out infinite;
 }
+
+.hero-image {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd9e3;
+    border-radius: 50%;
+}
+
+
+/* MENU */
 
 .menu {
     padding: 70px 50px;
@@ -119,7 +131,6 @@ nav a:hover {
 .menu-title {
     text-align: center;
     margin-bottom: 40px;
-    
 }
 
 .menu-title h2 {
@@ -128,7 +139,7 @@ nav a:hover {
     margin: 10px 0;
 }
 
-.menu-title >p:first-child {
+.menu-title > p:first-child {
     color: #e88ca5;
     font-weight: bold;
 }
@@ -142,17 +153,54 @@ nav a:hover {
     height: 120px;
     width: 120px;
     object-fit: contain;
-    
+}
+
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-filters button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffe0e9;
+    color: #4b3b3b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-filters button:hover {
+    background-color: #e88ca5;
+    color: white;
+}
+
+
+/* MENU CARDS */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .menu-card {
-   width: 100%;
+    width: 100%;
     display: block;
     background-color: rgb(255, 244, 249);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
 }
 
 .menu-card-image img {
@@ -184,49 +232,14 @@ nav a:hover {
     font-weight: bold;
 }
 
-.menu-card:hover {
-    transform: translateY(-8px);
-}
 
-.menu-card-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-
-    max-width: 1000px;
-    margin: 0 auto;
-}
+/* PERSONAGENS DOS CARDS */
 
 
-.hero-image {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffd9e3;
-    border-radius: 50%;
-}
-
-.menu-card-character {
-    flex-shrink: 0;
-}
-
-.menu-card-character img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
 /* Usagi */
+
 .menu-card-character {
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin-top: 10px;
 }
@@ -237,7 +250,10 @@ nav a:hover {
     object-fit: contain;
     margin-top: 19px;
 }
-/* hachiware */
+
+
+/* Hachiware */
+
 .menu-card-character1 {
     display: flex;
     justify-content: center;
@@ -251,9 +267,11 @@ nav a:hover {
     object-fit: contain;
 }
 
-/* Chiiwaka */
+
+/* Chiikawa */
+
 .menu-card-character2 {
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin-top: 1px;
 }
@@ -265,46 +283,19 @@ nav a:hover {
     margin-top: 19px;
 }
 
-.menu-filters {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
 
-.menu-filters button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-
-    background-color: #ffe0e9;
-    color: #4b3b3b;
-
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.menu-filters button:hover {
-    background-color: #e88ca5;
-    color: white;
-}
+/* MODAL SOBRE */
 
 .about-modal {
     position: fixed;
     top: 0;
     left: 0;
     display: none;
-
     width: 100%;
     height: 100%;
-
     background-color: rgba(0, 0, 0, 0.5);
-
-   
     justify-content: center;
     align-items: center;
-    
     z-index: 1000;
 }
 
@@ -312,12 +303,11 @@ nav a:hover {
     position: relative;
     width: 500px;
     padding: 40px;
-
     background-color: #ffecf9;
     border-radius: 25px;
-
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: aboutOpen 0.3s ease;
 }
 
 .about-box h2 {
@@ -326,15 +316,17 @@ nav a:hover {
     margin-bottom: 12px;
 }
 
+.about-box p {
+    font-weight: bold;
+}
+
 .close-about {
     position: absolute;
     top: 15px;
     right: 20px;
-
-    border:none;
+    border: none;
     background: none;
     display: flex;
-
     font-size: 24px;
     cursor: pointer;
     transition: 0.2s;
@@ -351,32 +343,138 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
-.about-box {
-    animation: aboutOpen 0.3s ease;
-}
-
-.about-box p {
-    font-weight: bold;
-}
-
 .about-modal.closing {
     animation: modalClose 0.3s ease forwards;
 }
 
 
+/* LOCALIZAÇÃO */
+
+.location {
+    padding: 70px 50px;
+    background-color: #fff1e6;
+}
+
+.location-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.location-title h2 {
+    font-size: 36px;
+    color: #4b3b3b;
+    margin-bottom: 10px;
+}
+
+.location-title p {
+    color: #6b5b5b;
+    font-size: 18px;
+}
+
+.location-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* QUADRO DE INFORMAÇÕES */
+
+.location-info {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.location-info h3 {
+    color: #e88ca5;
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    color: #4b3b3b;
+    margin-bottom: 8px;
+}
+
+
+/* BOTÃO */
+
+.location-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #e88ca5;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.location-button:hover {
+    background-color: #b34764;
+    transform: translateY(-3px);
+}
+
+
+/* PERSONAGEM DA LOCALIZAÇÃO */
+
+.location-character {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.location-character img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* MAPA */
+
+.location-map {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* ANIMAÇÕES */
+
 @keyframes float {
+
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
+
 }
 
 @keyframes aboutOpen {
+
     from {
         opacity: 0;
         transform: translateY(10px);
@@ -386,9 +484,11 @@ nav a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
 
 @keyframes modalClose {
+
     from {
         opacity: 1;
     }
@@ -396,4 +496,5 @@ nav a:hover {
     to {
         opacity: 0;
     }
+
 }

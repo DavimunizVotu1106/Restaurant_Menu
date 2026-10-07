@@ -2,14 +2,10 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Chiiwaka Kitchen</title>
-
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
@@ -27,18 +23,22 @@
 
         </div>
 
-
         <nav>
 
             <a href="#">Início</a>
+
             <a href="#menu">Menu</a>
+
             <a href="#" id="open-about">Sobre</a>
-            <a href="#">Localização</a>
+
+            <a href="#location">Localização</a>
 
         </nav>
 
     </header>
 
+
+    <!-- HERO -->
 
     <section class="hero">
 
@@ -70,64 +70,69 @@
     </section>
 
 
+    <!-- MENU -->
+
     <section class="menu" id="menu">
 
         <div class="menu-title">
 
-           <div
-    style="
-        border:#e88ca5 solid 1px;
-        border-radius:50px;
-        width:1150px;
-        margin:0 auto;
-        padding:20px;
-    "
-    class="menu-character"
->
+            <div
+                class="menu-character"
+                style="
+                    border:#e88ca5 solid 1px;
+                    border-radius:50px;
+                    width:1150px;
+                    margin:0 auto;
+                    padding:20px;
+                "
+            >
 
-    <div style="
-        align-items:center;
-        justify-content:center;
-        gap:10px;
-    ">
+                <div
+                    style="
+                        align-items:center;
+                        justify-content:center;
+                        gap:10px;
+                    "
+                >
 
-        <img
-            src="images/characters/hachiware.png"
-            alt="Hachiware"
-        >
+                    <img
+                        src="images/characters/hachiware.png"
+                        alt="Hachiware"
+                    >
 
-        <p style="
-            color:#e88ca5;
-            font-size:18px;
-            font-weight:bold;
-        ">
-            <b>우리의 메뉴</b>
-        </p>
+                    <p
+                        style="
+                            color:#e88ca5;
+                            font-size:18px;
+                            font-weight:bold;
+                        "
+                    >
+                        <b>우리의 메뉴</b>
+                    </p>
 
-    </div>
+                </div>
 
 
-    <div class="menu-filters">
+                <div class="menu-filters">
 
-        <button>🍚 Pratos</button>
+                    <button>🍚 Pratos</button>
 
-        <button>🌶️ Picantes</button>
+                    <button>🌶️ Picantes</button>
 
-        <button>🥤 Bebidas</button>
+                    <button>🥤 Bebidas</button>
 
-        <button>🍰 Sobremesas</button>
+                    <button>🍰 Sobremesas</button>
 
-    </div>
+                </div>
 
-</div>
+            </div>
 
-            
+
             <h2>Pratos coreanos populares</h2>
 
             <p>
                 Alguns dos pratos mais famosos da Coreia
             </p>
-
 
         </div>
 
@@ -148,9 +153,14 @@
 
                 </div>
 
+
                 <div class="menu-card-character2">
-                    <img src="images/characters/chiikawa-cartoon-png.png"
-                        alt="Chiikawa">
+
+                    <img
+                        src="images/characters/chiikawa-cartoon-png.png"
+                        alt="Chiikawa"
+                    >
+
                 </div>
 
 
@@ -246,35 +256,117 @@
 
             </div>
 
+        </div>
+
+    </section>
+
+
+    <!-- MODAL SOBRE -->
+
+    <div class="about-modal">
+
+        <div class="about-box">
+
+            <button class="close-about">✕</button>
+
+            <img
+                src="images/characters/Firefly.png"
+                alt="Firefly"
+                class="about-character"
+            >
+
+            <h2>Sobre nós</h2>
+
+            <p>
+                No Chiiwaka Restaurant você encontrará uma
+                experiência única, com o nosso
+                menu de pratos e nossos personagens.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOCALIZAÇÃO -->
+
+    <section class="location" id="location">
+
+        <div class="location-title">
+
+            <h2>Onde Estamos?</h2>
+
+            <p>
+                Venha conhecer o nosso restaurante coreano!
+            </p>
+
+        </div>
+
+
+        <div class="location-content">
+
+
+            <!-- INFORMAÇÕES -->
+
+            <div class="location-info">
+
+                <h3>Endereço</h3>
+
+                <p>Rua Myeongdong, 100</p>
+
+                <p>Seoul - Korea</p>
+
+
+                <h3>Horário de funcionamento</h3>
+
+                <p>Segunda a Sexta-Feira</p>
+
+                <p>10:00 às 22:00</p>
+
+
+                <a
+                    href="https://maps.app.goo.gl/tLTZxNRqBSj3W5LK7"
+                    class="location-button"
+                >
+                    Como chegar
+                </a>
+
+
+                <!-- PERSONAGEM -->
+
+                <div class="location-character">
+
+                    <img
+                        src="images/characters/kurimanju.webp"
+                        alt="Kurimanju"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- GOOGLE MAPS -->
+
+            <div class="location-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca2f11b3f14ab%3A0x3b436be085e38e0c!2sMyeongdong%2C%20Jung%20District%2C%20Seul%2C%20Coreia%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1791385741180!5m2!1spt-BR!2sbr"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                >
+                </iframe>
+
+            </div>
 
         </div>
 
     </section>
 
-<div class="about-modal">
 
-    <div class="about-box">
+    <script src="script.js"></script>
 
-        <button class="close-about">✕</button>
-
-        <img src="images/characters/Firefly.png"
-        alt="Firefly"
-        class="about-character">
-
-        <h2>Sobre nós</h2>
-
-        <p>
-            No Chiiwaka Restaurant você encontrará uma 
-            experiência única, com o nosso
-            menu de pratos e nossos personagens.
-        </p>
-
-    </div>
-
-</div>
-</section>
-
-<script src="script.js"></script>
 </body>
 
 </html>
