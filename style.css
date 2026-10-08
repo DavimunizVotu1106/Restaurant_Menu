@@ -125,7 +125,14 @@ nav a:hover {
 
 .menu {
     padding: 70px 50px;
-    background-color: #fffaf5;
+    background-color: #fff0f3;
+    background-image: url("images/characters/background/wallpaper.png");
+    background-repeat: no-repeat;
+    background-position: center 2px;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    
+  
 }
 
 .menu-title {
