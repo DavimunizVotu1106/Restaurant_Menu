@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    
 }
 
 
@@ -124,15 +125,19 @@ nav a:hover {
 /* MENU */
 
 .menu {
-    padding: 70px 50px;
+    padding: 70px 30px;
+    margin: 80px auto;
+    max-width: 1800px;
+
     background-color: #fff0f3;
     background-image: url("images/characters/background/wallpaper.png");
     background-repeat: no-repeat;
-    background-position: center 2px;
-    background-size: 100% auto;
-    background-attachment: fixed;
-    
-  
+    background-position: 10 % center;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+    border: 1px solid #ffc4d2;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .menu-title {
